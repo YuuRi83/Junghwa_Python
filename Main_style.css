@@ -1,0 +1,309 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style:none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: black;
+}
+
+a{
+    color: white;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contents1_element{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+body {
+    --nav-height: 60px;
+  
+    padding-top: var(--nav-height);
+}
+
+/*---------위로는 공통 요소들-----------*/
+
+.navbar{
+    width: 100%;
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#A4A4A4;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    justify-content: space-around;
+}
+
+.nav--hidden {
+    transform: translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
+}
+
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+  }  
+
+.navbar_logo{
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar_logo > i{
+    color: #2f7af4;
+}
+
+.navbar_login{ 
+    font-size: 30px;
+}
+
+.navbar_login > a > i{
+    color: #fff;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu > li{
+    padding: 17px 40px;
+}
+
+.navbar_menu > li :hover{
+    background-color: #000000;
+    /*border-radius: 4px;*/
+    padding: 20px 40px;
+}
+
+
+.result{
+    font-size: 24px;
+}
+
+.intro_bg{
+    background-image: url("image/intro.png");
+    width: 100%;
+    height: 718px;
+}
+
+.amount{
+    position: relative;
+    top: -66px;
+    display: flex;
+    width: 1280px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: auto;
+}
+
+.amount > li {
+    flex: 1;
+    height: 132px;
+}
+
+.amount > li > div{
+    text-align: center;
+    height: 57px;
+    margin-top: 37px;
+}
+
+.amount > li:not(:last-child) > div{
+    border-right: 1px solid #E1E1E1;
+}
+
+.intro_text{
+    width: 100%;
+    margin:auto;
+    padding: 245px;
+    text-align: center;
+}
+
+.intro_text > h1,
+.intro_text > h4{
+    color: #fff;
+}
+
+.icons{
+    display: flex;
+    width: 1280px;
+    /*background: orange;*/
+    margin: auto;
+}
+
+
+
+.icons > li {
+    flex: 1;
+    background:#fff;
+    margin-top:49px;
+    height: 302px;
+    text-align: center;
+}
+
+.icons > li > .icon_img{
+    margin-top: 18px;
+}
+
+.icons > li:not(:last-child) {
+    margin-right: 20.6px;
+}
+
+.icons .contents1_element{
+    width: 240px;
+    margin: 8px auto;
+    letter-spacing: -1px;
+}
+
+.more{
+    width: 100px;
+    height: 30px;
+    background: #2f7af4;
+    color: #fff;
+    font-size: 12px;
+    line-height: 30px;
+    margin: 25px auto;
+}
+
+/* main_text0 */
+.main_text0{
+    margin-top: 0px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 659px;
+}
+.main_text0 > h1{
+    padding-top: -50px;
+    text-align: center;
+}
+
+.main_text0 > .contents1{
+    text-align: center;
+}
+
+.charg_station_photo > img{
+    height: 427px;
+    width: 640px;
+}
+
+/* main_text1 */
+.main_text1{
+    width: 100%;
+    height: 750px;
+    margin-top:-116px;
+    background: #f1f1f3;
+}
+
+.main_text1 > h1{
+    padding-top:100px;
+    text-align:center ;
+}
+
+.main_text1 > .contents1{
+    text-align: center;
+}
+
+
+.service{
+    width: 1280px;
+    display:flex;
+    margin: 49px auto;
+    margin-bottom: 100px;
+    height: 427px;
+}
+
+.service > .contents2{
+    padding:20px;
+}
+
+.service > .contents2 > h2{
+    margin-bottom: 27px;
+}
+
+/* main_text2 */
+/*background size 변경*/
+.main_text2{
+    width: 100%;
+    height: 418px;
+    background-image: url(image/last_bg.jpg);
+}
+
+.main_text2 > ul{
+    display:flex;
+    padding-top:138px;
+    margin: auto;
+}
+
+.main_text2 > ul > li{
+    flex:1;
+    text-align: center;
+}
+
+.main_text2 > ul > li > div > h1,
+.main_text2 > ul > li > div{
+    color: #fff;
+}
+
+.more2{
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 220px;
+    height:40px;
+    line-height: 40px;
+    margin: 16px auto;
+}
+
+.more2:hover{
+    background-color: #A4A4A4;
+}
+
+
+.more{
+    cursor:pointer;
+}
+
+.more:hover{
+    background-color: #A4A4A4;
+}
+
+
+footer{
+    display: flex;
+    background: #1f1f1f ;
+    padding: 50px;
+}
+
+footer > div:first-child{
+    flex: 3;
+    text-align: center;
+    color: #fff;
+}
+
+footer > div:last-child{
+    flex:9;
+    color: #fff;
+}
