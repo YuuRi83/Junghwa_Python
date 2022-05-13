@@ -77,10 +77,11 @@ body {
 }
 
 .navbar_login{ 
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .navbar_login > a > i{
+    font-size: 30px;
     color: #fff;
 }
 
